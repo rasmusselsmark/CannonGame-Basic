@@ -6,6 +6,10 @@ public class Cannon : MonoBehaviour
 	public GameObject CannonBarrel;
 	public GameObject CannonBallPrefab;
 
+	public KeyCode KeyUp;
+	public KeyCode KeyDown;
+	public KeyCode KeyFire;
+
 	private float _firePower = 10f;
 
 	// Use this for initialization
@@ -16,15 +20,15 @@ public class Cannon : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		if (Input.GetKey (KeyCode.UpArrow))
+		if (Input.GetKey (KeyUp))
 		{
 			RotateBarrel (1);
 		}
-		else if (Input.GetKey (KeyCode.DownArrow))
+		else if (Input.GetKey (KeyDown))
 		{
 			RotateBarrel (-1);
 		}
-		else if (Input.GetKeyUp (KeyCode.Space))
+		else if (Input.GetKeyUp (KeyFire))
 		{
 			FireCannon (_firePower);
 		}
