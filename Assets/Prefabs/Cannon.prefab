@@ -41,9 +41,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 417096}
   - 114: {fileID: 11484876}
+  - 61: {fileID: 6199528}
   m_Layer: 0
   m_Name: Cannon
-  m_TagString: Untagged
+  m_TagString: Cannon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,8 +55,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 193024}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.96, y: -3.72, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
+  m_LocalPosition: {x: 2.0305362, y: -3.710404, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 429940}
@@ -86,6 +87,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 417096}
   m_RootOrder: 1
+--- !u!61 &6199528
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193024}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.03650427, y: 0.011232376}
+  serializedVersion: 2
+  m_Size: {x: 0.6237251, y: 0.44962764}
 --- !u!114 &11484876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -99,6 +114,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CannonBarrel: {fileID: 167654}
   CannonBallPrefab: {fileID: 130674, guid: 3903bebf88114744ea51e74afe96c220, type: 2}
+  ExplosionPrefab: {fileID: 110478, guid: 51b6747c1db79b34e84eaef3e8edd9d7, type: 2}
+  KeyUp: 0
+  KeyDown: 0
+  KeyFire: 0
+  ScoreUIText: {fileID: 0}
 --- !u!212 &21273560
 SpriteRenderer:
   m_ObjectHideFlags: 1
